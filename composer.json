@@ -5,9 +5,9 @@
   "license": "Apache-2.0",
   "require": {
     "php": "^8.5",
-    "kumwe/canonical-json": "dev-agent/canonical-encoder-port-v2",
-    "kumwe/contribution": "^0.1",
-    "kumwe/access-context": "^0.1",
+    "kumwe/canonical-json": "0.1.1",
+    "kumwe/contribution": "0.1.0",
+    "kumwe/access-context": "0.1.0",
     "psr/clock": "^1.0"
   },
   "autoload": {
@@ -52,6 +52,6 @@
     "phpstan/phpstan": "^2.1",
     "squizlabs/php_codesniffer": "^4.0"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true
 }
