@@ -191,9 +191,13 @@ final class DeclarationValidator
      *
      * @since   0.2.0
      */
-    public static function object(CanonicalEncoder $canonicalJson, array $value, string $label, int $limit = 32_768): void
-    {
-        if ($value !== [] && array_is_list($value)) {
+    public static function object(
+        CanonicalEncoder $canonicalJson,
+        array $value,
+        string $label,
+        int $limit = 32_768,
+    ): void {
+        if (self::isNonemptyList($value)) {
             throw new InvalidArgumentException(sprintf('%s must be a JSON object.', $label));
         }
         self::assertDeclarationValue($value);
@@ -254,5 +258,10 @@ final class DeclarationValidator
         foreach ($value as $item) {
             self::assertDeclarationValue($item, $depth + 1);
         }
+    }
+    /** @param array<array-key, mixed> $value Candidate collection from the JSON boundary. */
+    private static function isNonemptyList(array $value): bool
+    {
+        return $value !== [] && array_is_list($value);
     }
 }

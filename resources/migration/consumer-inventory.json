@@ -1,0 +1,315 @@
+[
+  {
+    "old_fqcn": "Kumwe\\App\\Automation\\Domain\\CronExpression",
+    "new_fqcn": "Kumwe\\Automation\\CronExpression",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/BusinessIntegration/Domain/ScheduleContributionDefinition.php",
+      "src/BusinessIntegration/Infrastructure/ContributedScheduleSynchronizer.php",
+      "src/Infrastructure/Automation/DoctrineScheduler.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\RetryPolicy",
+    "new_fqcn": "Kumwe\\Automation\\RetryPolicy",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php",
+      "src/BusinessIntegration/Application/ProcessWorkDispatcher.php",
+      "src/BusinessIntegration/Application/IntegrationEventConsumerDispatcher.php",
+      "src/BusinessIntegration/Application/DurableOutboundAdapterDispatcher.php",
+      "src/BusinessIntegration/Application/OutboxDispatcher.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\RetryDecision",
+    "new_fqcn": "Kumwe\\Automation\\RetryDecision",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JitterSource",
+    "new_fqcn": "Kumwe\\Automation\\JitterSource",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\CryptographicJitterSource",
+    "new_fqcn": "Kumwe\\Automation\\CryptographicJitterSource",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\FailureClassification",
+    "new_fqcn": "Kumwe\\Automation\\FailureClassification",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/BusinessIntegration/Infrastructure/DoctrineOutboxStore.php",
+      "src/BusinessIntegration/Infrastructure/DoctrineProcessManagerStore.php",
+      "src/BusinessIntegration/Infrastructure/DoctrineInboxStore.php",
+      "src/BusinessIntegration/Application/InboxStore.php",
+      "src/BusinessIntegration/Application/ProcessManagerStore.php",
+      "src/BusinessIntegration/Application/OutboxStore.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\PermanentFailure",
+    "new_fqcn": "Kumwe\\Automation\\PermanentFailure",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/BusinessIntegration/Infrastructure/RuntimeIntegrationEventTransport.php",
+      "src/BusinessIntegration/Application/DurableOutboundAdapterDispatcher.php",
+      "src/BusinessReporting/Application/GenerateReportExportHandler.php",
+      "src/Application/Automation/Job/SynchronizeTrustRevocationsHandler.php",
+      "src/Application/Automation/Job/TransitionContentHandler.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\TransientFailure",
+    "new_fqcn": "Kumwe\\Automation\\TransientFailure",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobEnvelope",
+    "new_fqcn": "Kumwe\\Automation\\JobEnvelope",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobLease",
+    "new_fqcn": "Kumwe\\Automation\\JobLease",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobStatus",
+    "new_fqcn": "Kumwe\\Automation\\JobStatus",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\StoredJob",
+    "new_fqcn": "Kumwe\\Automation\\StoredJob",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Infrastructure/Automation/DoctrineJobQueue.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobExecutionClass",
+    "new_fqcn": "Kumwe\\Automation\\JobExecutionClass",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/BusinessIntegration/Infrastructure/ContributedScheduleSynchronizer.php",
+      "src/Infrastructure/Automation/DoctrineJobQueue.php",
+      "src/Infrastructure/Automation/DoctrineScheduler.php",
+      "src/Infrastructure/Persistence/Migration/AuditTamperEvidenceMigration.php",
+      "src/Infrastructure/Persistence/Migration/BusinessRecordIdempotencyRetentionMigration.php",
+      "src/Infrastructure/Persistence/Migration/InstallationGlobalAutomationMigration.php",
+      "src/Infrastructure/Persistence/Migration/StudioContentAuthoringContextRetentionMigration.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobQueue",
+    "new_fqcn": "Kumwe\\Automation\\JobQueue",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php",
+      "src/BusinessIntegration/Application/JobQueueProcessWorkHandler.php",
+      "src/BusinessIntegration/Application/JobQueueIntegrationEventHandler.php",
+      "src/BusinessReporting/Infrastructure/JobQueueExportJobDispatcher.php",
+      "src/Infrastructure/Automation/DoctrineJobQueue.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobHandler",
+    "new_fqcn": "Kumwe\\Automation\\JobHandler",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php",
+      "src/BusinessIntegration/Application/ValidatedContributedJobHandler.php",
+      "src/BusinessReporting/Application/GenerateReportExportHandler.php",
+      "src/Application/Automation/Job/SynchronizeTrustRevocationsHandler.php",
+      "src/Application/Automation/Job/RotateRecordSecretsHandler.php",
+      "src/Application/Automation/Job/EnforceAuditRetentionHandler.php",
+      "src/Application/Automation/Job/PurgeBusinessRecordIdempotencyHandler.php",
+      "src/Application/Automation/Job/PurgeIdempotencyRecordsHandler.php",
+      "src/Application/Automation/Job/RebuildExtensionMapHandler.php",
+      "src/Application/Automation/Job/TransitionContentHandler.php",
+      "src/Application/Automation/Job/PurgeAdministratorSessionsHandler.php",
+      "src/Application/Automation/Job/VerifyAuditTrailHandler.php",
+      "src/Application/Automation/Job/RecordAuditAnchorHandler.php",
+      "src/Application/Automation/Job/PurgeStudioContentAuthoringContextsHandler.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobHandlerRegistry",
+    "new_fqcn": "Kumwe\\Automation\\JobHandlerRegistry",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\QueueRuntimePolicy",
+    "new_fqcn": "Kumwe\\Automation\\QueueRuntimePolicy",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php",
+      "src/BusinessIntegration/Infrastructure/ContributedQueueRuntimePolicyCatalog.php",
+      "src/BusinessIntegration/Infrastructure/ContributedScheduleSynchronizer.php",
+      "src/BusinessIntegration/Infrastructure/DoctrineInboxStore.php",
+      "src/BusinessIntegration/Application/IntegrationEventConsumerDispatcher.php",
+      "src/BusinessIntegration/Application/DurableOutboundAdapterDispatcher.php",
+      "src/Delivery/Console/Command/QueueWorkCommand.php",
+      "src/Infrastructure/Automation/DoctrineJobQueue.php",
+      "src/Infrastructure/Automation/DoctrineQueueRuntimeOperations.php",
+      "src/Infrastructure/Automation/DoctrineScheduler.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\QueueRuntimePolicyCatalog",
+    "new_fqcn": "Kumwe\\Automation\\QueueRuntimePolicyCatalog",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php",
+      "src/BusinessIntegration/Infrastructure/ContributedQueueRuntimePolicyCatalog.php",
+      "src/BusinessIntegration/Infrastructure/ContributedScheduleSynchronizer.php",
+      "src/BusinessIntegration/Infrastructure/DoctrineInboxStore.php",
+      "src/BusinessIntegration/Application/IntegrationEventConsumerDispatcher.php",
+      "src/BusinessIntegration/Application/DurableOutboundAdapterDispatcher.php",
+      "src/Delivery/Console/Command/QueueWorkCommand.php",
+      "src/Infrastructure/Automation/DoctrineJobQueue.php",
+      "src/Infrastructure/Automation/DoctrineQueueRuntimeOperations.php",
+      "src/Infrastructure/Automation/DoctrineScheduler.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\ExpiredJobLease",
+    "new_fqcn": "Kumwe\\Automation\\ExpiredJobLease",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Infrastructure/Automation/DoctrineJobQueue.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\Application\\Automation\\AutomationNotFound",
+    "new_fqcn": "Kumwe\\Automation\\AutomationNotFound",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/Delivery/Http/Api/Automation/AutomationApiHandler.php",
+      "src/Infrastructure/Mcp/McpToolErrorVocabulary.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\BusinessIntegration\\Domain\\QueueContributionDefinition",
+    "new_fqcn": "Kumwe\\Automation\\QueueContributionDefinition",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/BusinessIntegration/Infrastructure/ContributedQueueRuntimePolicyCatalog.php",
+      "src/Extension/Contribution/CanonicalManifestInterpreter.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\App\\BusinessIntegration\\Domain\\ScheduleContributionDefinition",
+    "new_fqcn": "Kumwe\\Automation\\ScheduleContributionDefinition",
+    "repository": "app",
+    "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+    "explicit_import_consumers": [
+      "src/BusinessIntegration/Infrastructure/ContributedScheduleSynchronizer.php",
+      "src/Extension/Contribution/CanonicalManifestInterpreter.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\Extension\\Spi\\BusinessIntegration\\Domain\\JobContributionDefinition",
+    "new_fqcn": "Kumwe\\Automation\\JobContributionDefinition",
+    "repository": "extension-sdk",
+    "source_commit": "e8ec23f155c5836c6bd083f154a8efb6e50aec66",
+    "explicit_import_consumers": [
+      "src/Manifest/ManifestContributions.php",
+      "src/Manifest/ManifestContributionGraphValidator.php",
+      "src/Spi/Application/Automation/JobHandler.php"
+    ],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": "Kumwe\\Extension\\Spi\\Application\\Automation\\JobDeclaration",
+    "new_fqcn": "Kumwe\\Automation\\JobDeclaration",
+    "repository": "extension-sdk",
+    "source_commit": "e8ec23f155c5836c6bd083f154a8efb6e50aec66",
+    "explicit_import_consumers": [],
+    "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
+    "adoption": "blocked pending immutable verified dependency releases"
+  }
+]

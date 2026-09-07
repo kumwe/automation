@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Kumwe\Automation;
 
 use Kumwe\CanonicalJson\CanonicalEncoder;
-
 use Kumwe\Contribution\ContributionDefinition;
 use Kumwe\Automation\Internal\DeclarationValidator;
 use DateTimeZone;
