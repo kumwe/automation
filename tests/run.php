@@ -29,6 +29,7 @@ $clock=new class($now) implements ClockInterface {public function __construct(pr
 $jitter=new class implements JitterSource {public array $ranges=[];public int $extra=0; public function between(int $minimum,int $maximum):int{$this->ranges[]=[$minimum,$maximum];return $maximum+$this->extra;}};
 $policy=new RetryPolicy($clock,$jitter,10,60);
 $decision=$policy->decide(new RuntimeException('temporary'),2,5);
+check($decision instanceof \Kumwe\Automation\RetryDecision,'Policy returns the portable decision value');
 check($decision->delaySeconds===20 && $decision->retryAt==$now->modify('+20 seconds'),'Clock and full jitter are injected');
 check($policy->decide(new RuntimeException(),4,5)->delaySeconds===60,'Backoff saturates at maximum');
 check(!$policy->decide(new PermanentFailure(),1,5)->shouldRetry,'Permanent failures do not retry');
@@ -58,4 +59,18 @@ $encoder->bytes=32769; rejects(fn()=>new JobContributionDefinition($encoder,'acm
 $handler=new class implements JobHandler {public function type():string{return 'acme.reindex';}public function handle(array $payload,ExecutionContext $context):void{}};
 $registry=new JobHandlerRegistry([$handler]);check($registry->find('acme.reindex')===$handler && $registry->find('missing')===null,'Handler registry resolves exact type');
 rejects(fn()=>new JobHandlerRegistry([$handler,$handler]));
+$schedule=new ScheduleContributionDefinition($encoder,'acme.nightly','acme.reindex','0 1 * * *','UTC',['id'=>7],siteIdentifier:'default');
+check(ScheduleContributionDefinition::fromArray($encoder,$schedule->toArray())->toArray()===$schedule->toArray(),'Schedule declaration roundtrip');
+rejects(fn()=>new ScheduleContributionDefinition($encoder,'acme.nightly','acme.reindex','0 1 * * *','Invalid/Zone',[]));
+rejects(fn()=>new ScheduleContributionDefinition($encoder,'acme.nightly','acme.reindex','invalid','UTC',[]));
+rejects(fn()=>new ScheduleContributionDefinition($encoder,'acme.nightly','acme.reindex','0 1 * * *','UTC',['x'=>1.5]));
+$manifest=['job_type'=>'acme.reindex','schema_version'=>1,'host_extension'=>'retained'];
+check(JobDeclaration::fromManifest($manifest)->toArray()===$manifest,'Typed manifest view retains validated document extensions');
+foreach([['job_type'=>'bad type','schema_version'=>1],['job_type'=>'acme.reindex','schema_version'=>'1'],['job_type'=>'acme.reindex','schema_version'=>0]] as $bad)rejects(fn()=>JobDeclaration::fromManifest($bad));
+$stored=new \Kumwe\Automation\StoredJob('job','default','acme.reindex',[],1,1,5,'00000000-0000-7000-8000-000000000001');
+check($stored->executionClass===\Kumwe\Automation\JobExecutionClass::Site->value,'Stored job defaults to site execution');
+rejects(fn()=>new \Kumwe\Automation\StoredJob('job','default','acme.reindex',[],1,1,5,'bad'));
+rejects(fn()=>new \Kumwe\Automation\StoredJob('job','default','acme.reindex',[],1,1,5,'00000000-0000-7000-8000-000000000001','unknown'));
+$random=new \Kumwe\Automation\CryptographicJitterSource();check($random->between(7,7)===7,'Jitter honors singleton boundary without probabilistic assertion');
+check(new \Kumwe\Automation\ExpiredJobLease() instanceof RuntimeException && new \Kumwe\Automation\AutomationNotFound() instanceof DomainException,'Failure ports preserve exception families');
 fwrite(STDOUT,"automation: $assertions assertions passed\n");
