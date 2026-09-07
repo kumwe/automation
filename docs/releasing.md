@@ -6,4 +6,4 @@ All pre-1.0 Kumwe dependencies use exact observed stable versions. A dependency 
 
 Publication is distinct from release verification. Before App adoption, verify source/tag/archive identity, the clean no-dev consumer, API/capability/service manifests and independent RELEASE-ATTESTATION.yaml. This package never asserts App integration or roadmap acceptance from package tests. Follow docs/package-release-standard.md for immutable release transition and recovery rules.
 
-This successor uses the published Contribution 0.1.1 contract. Integration currently publishes a dependency on Automation 0.1.0 and Contribution 0.1.0; update Integration only after this Automation successor is actually released and verified.
+This successor uses the published Contribution 0.1.1 and Access Context 0.1.1 contracts. Integration currently publishes a dependency on Automation 0.1.0 and Contribution 0.1.0; update Integration only after this Automation successor is actually released and verified.
