@@ -214,5 +214,37 @@
         "source_path": "src/Spi/Application/Automation/JobDeclaration.php",
         "source_sha256": "00f34d188f338146a6da5fe010e977c7d5a1285a3820599c03c787bcd6c5020c",
         "target_path": "src/JobDeclaration.php"
+    },
+    {
+        "origin": "package",
+        "old_fqcn": null,
+        "new_fqcn": "Kumwe\\Automation\\ConfigProvider",
+        "source_repository": "https://github.com/kumwe/automation",
+        "target_path": "src/ConfigProvider.php",
+        "responsibility": "Portable package composition added during readiness completion."
+    },
+    {
+        "origin": "package",
+        "old_fqcn": null,
+        "new_fqcn": "Kumwe\\Automation\\Container\\CryptographicJitterSourceFactory",
+        "source_repository": "https://github.com/kumwe/automation",
+        "target_path": "src/Container/CryptographicJitterSourceFactory.php",
+        "responsibility": "Portable package composition added during readiness completion."
+    },
+    {
+        "origin": "package",
+        "old_fqcn": null,
+        "new_fqcn": "Kumwe\\Automation\\Container\\JobHandlerRegistryFactory",
+        "source_repository": "https://github.com/kumwe/automation",
+        "target_path": "src/Container/JobHandlerRegistryFactory.php",
+        "responsibility": "Portable package composition added during readiness completion."
+    },
+    {
+        "origin": "package",
+        "old_fqcn": null,
+        "new_fqcn": "Kumwe\\Automation\\Container\\RetryPolicyFactory",
+        "source_repository": "https://github.com/kumwe/automation",
+        "target_path": "src/Container/RetryPolicyFactory.php",
+        "responsibility": "Portable package composition added during readiness completion."
     }
 ]
