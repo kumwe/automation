@@ -1,0 +1,1828 @@
+{
+    "package": "kumwe/automation",
+    "symbols": {
+        "Kumwe\\Automation\\AutomationNotFound": {
+            "kind": "class",
+            "final": true,
+            "readonly": false,
+            "parent": "DomainException",
+            "interfaces": [
+                "Throwable",
+                "Stringable"
+            ],
+            "constants": [],
+            "methods": []
+        },
+        "Kumwe\\Automation\\CronExpression": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [
+                "Stringable"
+            ],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "expression",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "__toString": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "next": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "after",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "timezone",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "DateTimeImmutable"
+                }
+            }
+        },
+        "Kumwe\\Automation\\CryptographicJitterSource": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [
+                "Kumwe\\Automation\\JitterSource"
+            ],
+            "constants": [],
+            "methods": {
+                "between": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "minimum",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximum",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "int"
+                }
+            }
+        },
+        "Kumwe\\Automation\\ExpiredJobLease": {
+            "kind": "class",
+            "final": true,
+            "readonly": false,
+            "parent": "RuntimeException",
+            "interfaces": [
+                "Stringable",
+                "Throwable"
+            ],
+            "constants": [],
+            "methods": []
+        },
+        "Kumwe\\Automation\\FailureClassification": {
+            "kind": "enum",
+            "final": true,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [
+                "UnitEnum",
+                "BackedEnum"
+            ],
+            "constants": {
+                "PERMANENT": "permanent",
+                "TRANSIENT": "transient"
+            },
+            "methods": {
+                "cases": {
+                    "static": true,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "from": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "string|int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "static"
+                },
+                "tryFrom": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "string|int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "?static"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JitterSource": {
+            "kind": "interface",
+            "final": false,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "between": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "minimum",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximum",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "int"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobContributionDefinition": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [
+                "Kumwe\\Contribution\\ContributionDefinition"
+            ],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "canonicalJson",
+                            "type": "Kumwe\\CanonicalJson\\CanonicalEncoder",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "jobType",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "schemaVersion",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "handlerVersion",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "payloadSchema",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "installationWide",
+                            "type": "bool",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "fromArray": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "canonicalJson",
+                            "type": "Kumwe\\CanonicalJson\\CanonicalEncoder",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "data",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobContributionDefinition"
+                },
+                "handlerVersion": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "identifier": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "installationWide": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "bool"
+                },
+                "maximumAttempts": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "payloadSchema": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "queue": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "schemaVersion": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "toArray": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobDeclaration": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "fromManifest": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "data",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobDeclaration"
+                },
+                "schemaVersion": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "toArray": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "type": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobEnvelope": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "attempts": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "availableAt": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "DateTimeImmutable"
+                },
+                "claim": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "worker",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobEnvelope"
+                },
+                "complete": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "worker",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobEnvelope"
+                },
+                "createdAt": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "DateTimeImmutable"
+                },
+                "id": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "isClaimableAt": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "bool"
+                },
+                "lease": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "?Kumwe\\Automation\\JobLease"
+                },
+                "maximumAttempts": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "payload": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "pending": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "canonicalJson",
+                            "type": "Kumwe\\CanonicalJson\\CanonicalEncoder",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "type",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "payload",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "availableAt",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "createdAt",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "schemaVersion",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "priority",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobEnvelope"
+                },
+                "priority": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "queue": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "releaseExpiredLease": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobEnvelope"
+                },
+                "releaseForRetry": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "worker",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "retryAt",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobEnvelope"
+                },
+                "renewLease": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "worker",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobEnvelope"
+                },
+                "schemaVersion": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "status": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "Kumwe\\Automation\\JobStatus"
+                },
+                "type": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobExecutionClass": {
+            "kind": "enum",
+            "final": true,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [
+                "UnitEnum",
+                "BackedEnum"
+            ],
+            "constants": {
+                "Installation": "installation",
+                "Site": "site"
+            },
+            "methods": {
+                "cases": {
+                    "static": true,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "from": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "string|int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "static"
+                },
+                "tryFrom": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "string|int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "?static"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobHandler": {
+            "kind": "interface",
+            "final": false,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "handle": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "payload",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "type": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobHandlerRegistry": {
+            "kind": "class",
+            "final": true,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "handlers",
+                            "type": "iterable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "find": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "type",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "?Kumwe\\Automation\\JobHandler"
+                },
+                "types": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobLease": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "owner",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "acquiredAt",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "expiresAt",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "acquiredAt": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "DateTimeImmutable"
+                },
+                "assertActiveOwner": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "owner",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "expiresAt": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "DateTimeImmutable"
+                },
+                "isExpiredAt": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "bool"
+                },
+                "owner": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "renew": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "owner",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "time",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\JobLease"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobQueue": {
+            "kind": "interface",
+            "final": false,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "all": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "limit",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "array"
+                },
+                "cancel": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "claim": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "workerId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "?Kumwe\\Automation\\StoredJob"
+                },
+                "complete": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "job",
+                            "type": "Kumwe\\Automation\\StoredJob",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "workerId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "disconnect": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "workerId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "enqueue": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "type",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "payload",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "availableAt",
+                            "type": "DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "priority",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "string"
+                },
+                "fail": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "job",
+                            "type": "Kumwe\\Automation\\StoredJob",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "workerId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "failure",
+                            "type": "Throwable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "permanent",
+                            "type": "bool",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "heartbeat": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "workerId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "jobId",
+                            "type": "?string",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "renew": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "job",
+                            "type": "Kumwe\\Automation\\StoredJob",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "workerId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                },
+                "retry": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "context",
+                            "type": "Kumwe\\Context\\Value\\ExecutionContext",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "void"
+                }
+            }
+        },
+        "Kumwe\\Automation\\JobStatus": {
+            "kind": "enum",
+            "final": true,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [
+                "UnitEnum",
+                "BackedEnum"
+            ],
+            "constants": {
+                "CANCELED": "canceled",
+                "COMPLETED": "completed",
+                "DEAD": "dead",
+                "PENDING": "pending",
+                "RESERVED": "reserved"
+            },
+            "methods": {
+                "cases": {
+                    "static": true,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "from": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "string|int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "static"
+                },
+                "tryFrom": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "string|int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "?static"
+                }
+            }
+        },
+        "Kumwe\\Automation\\PermanentFailure": {
+            "kind": "class",
+            "final": true,
+            "readonly": false,
+            "parent": "RuntimeException",
+            "interfaces": [
+                "Stringable",
+                "Throwable"
+            ],
+            "constants": [],
+            "methods": []
+        },
+        "Kumwe\\Automation\\QueueContributionDefinition": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [
+                "Kumwe\\Contribution\\ContributionDefinition"
+            ],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "queueId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumInFlight",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "retentionDays",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "fromArray": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "data",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\QueueContributionDefinition"
+                },
+                "identifier": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "leaseSeconds": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "maximumAttempts": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "maximumInFlight": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "retentionDays": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "int"
+                },
+                "toArray": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                }
+            }
+        },
+        "Kumwe\\Automation\\QueueRuntimePolicy": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseSeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumInFlight",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "retentionDays",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "runtimeGeneration",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "toArray": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                }
+            }
+        },
+        "Kumwe\\Automation\\QueueRuntimePolicyCatalog": {
+            "kind": "interface",
+            "final": false,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "maximumAttempts": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "jobType",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "requested",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "int"
+                },
+                "policies": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "policy": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "?Kumwe\\Automation\\QueueRuntimePolicy"
+                }
+            }
+        },
+        "Kumwe\\Automation\\RetryDecision": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "classification",
+                            "type": "Kumwe\\Automation\\FailureClassification",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "shouldRetry",
+                            "type": "bool",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "delaySeconds",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "retryAt",
+                            "type": "?DateTimeImmutable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                }
+            }
+        },
+        "Kumwe\\Automation\\RetryPolicy": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "clock",
+                            "type": "Psr\\Clock\\ClockInterface",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "jitter",
+                            "type": "Kumwe\\Automation\\JitterSource",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "baseDelaySeconds",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumDelaySeconds",
+                            "type": "int",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "classify": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "failure",
+                            "type": "Throwable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\FailureClassification"
+                },
+                "decide": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "failure",
+                            "type": "Throwable",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "attempt",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\RetryDecision"
+                }
+            }
+        },
+        "Kumwe\\Automation\\ScheduleContributionDefinition": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [
+                "Kumwe\\Contribution\\ContributionDefinition"
+            ],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "canonicalJson",
+                            "type": "Kumwe\\CanonicalJson\\CanonicalEncoder",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "scheduleId",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "jobType",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "cronExpression",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "timezone",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "payload",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "siteIdentifier",
+                            "type": "?string",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "enabled",
+                            "type": "bool",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                },
+                "cronExpression": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "enabled": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "bool"
+                },
+                "fromArray": {
+                    "static": true,
+                    "parameters": [
+                        {
+                            "name": "canonicalJson",
+                            "type": "Kumwe\\CanonicalJson\\CanonicalEncoder",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "data",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": "Kumwe\\Automation\\ScheduleContributionDefinition"
+                },
+                "identifier": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "jobType": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "payload": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                },
+                "queue": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "siteIdentifier": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "?string"
+                },
+                "timezone": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "string"
+                },
+                "toArray": {
+                    "static": false,
+                    "parameters": [],
+                    "return": "array"
+                }
+            }
+        },
+        "Kumwe\\Automation\\StoredJob": {
+            "kind": "class",
+            "final": true,
+            "readonly": true,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": {
+                "__construct": {
+                    "static": false,
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "queue",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "type",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "payload",
+                            "type": "array",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "schemaVersion",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "attempts",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "maximumAttempts",
+                            "type": "int",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "leaseToken",
+                            "type": "string",
+                            "optional": false,
+                            "variadic": false,
+                            "reference": false
+                        },
+                        {
+                            "name": "executionClass",
+                            "type": "string",
+                            "optional": true,
+                            "variadic": false,
+                            "reference": false
+                        }
+                    ],
+                    "return": ""
+                }
+            }
+        },
+        "Kumwe\\Automation\\TransientFailure": {
+            "kind": "interface",
+            "final": false,
+            "readonly": false,
+            "parent": null,
+            "interfaces": [],
+            "constants": [],
+            "methods": []
+        }
+    }
+}
