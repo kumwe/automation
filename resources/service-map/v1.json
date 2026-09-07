@@ -1,0 +1,12 @@
+{
+    "package": "kumwe/automation",
+    "ports": [
+        "Kumwe\\Automation\\JitterSource",
+        "Kumwe\\Automation\\JobHandler",
+        "Kumwe\\Automation\\JobQueue",
+        "Kumwe\\Automation\\QueueRuntimePolicyCatalog",
+        "Kumwe\\Automation\\TransientFailure"
+    ],
+    "bindings": [],
+    "composition": "Host supplies explicit constructor dependencies and implements ports. This package performs no automatic registration."
+}

@@ -1,0 +1,218 @@
+[
+    {
+        "old_fqcn": "Kumwe\\App\\Automation\\Domain\\CronExpression",
+        "new_fqcn": "Kumwe\\Automation\\CronExpression",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Automation/Domain/CronExpression.php",
+        "source_sha256": "4186a90ea3ea124ce653ba872e0c3cc4d291f379c88aa9312dc57576e8f17a64",
+        "target_path": "src/CronExpression.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\RetryPolicy",
+        "new_fqcn": "Kumwe\\Automation\\RetryPolicy",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/RetryPolicy.php",
+        "source_sha256": "f26c3d669ebe305aad68290016c521f08c95f8e8638373c05c11d0236097ec95",
+        "target_path": "src/RetryPolicy.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\RetryDecision",
+        "new_fqcn": "Kumwe\\Automation\\RetryDecision",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/RetryDecision.php",
+        "source_sha256": "ef331f01eb107c08fc1fed0852721141310cf20502fcd6953283101b4957da30",
+        "target_path": "src/RetryDecision.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JitterSource",
+        "new_fqcn": "Kumwe\\Automation\\JitterSource",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JitterSource.php",
+        "source_sha256": "cd400a9ca09c4a2723693d4beb7ec859930020a04f708045e3e501bf4ef7ad70",
+        "target_path": "src/JitterSource.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\CryptographicJitterSource",
+        "new_fqcn": "Kumwe\\Automation\\CryptographicJitterSource",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/CryptographicJitterSource.php",
+        "source_sha256": "bf66c9150fdf138f7c31c29f9303549f36f8cf284b01d431294d7145a1595aa7",
+        "target_path": "src/CryptographicJitterSource.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\FailureClassification",
+        "new_fqcn": "Kumwe\\Automation\\FailureClassification",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/FailureClassification.php",
+        "source_sha256": "40ce13078e39b4d7ab739677f7eceb68071d38b42e70686e2988fa951e3e8c72",
+        "target_path": "src/FailureClassification.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\PermanentFailure",
+        "new_fqcn": "Kumwe\\Automation\\PermanentFailure",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/PermanentFailure.php",
+        "source_sha256": "63af7f51cdcd952d3cabb25a22451c548db028df0be693b63b4b4c9719100638",
+        "target_path": "src/PermanentFailure.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\TransientFailure",
+        "new_fqcn": "Kumwe\\Automation\\TransientFailure",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/TransientFailure.php",
+        "source_sha256": "fe576460998b631affe2178b6f070f30d263ce2aa420de3f42b0a8d4e40801f7",
+        "target_path": "src/TransientFailure.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobEnvelope",
+        "new_fqcn": "Kumwe\\Automation\\JobEnvelope",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobEnvelope.php",
+        "source_sha256": "496a24ace8620b0575c38c39a81bb9eee275a1a4d878543f6d8da1cad818829f",
+        "target_path": "src/JobEnvelope.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobLease",
+        "new_fqcn": "Kumwe\\Automation\\JobLease",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobLease.php",
+        "source_sha256": "af3cfe0cc4bf4f6a15d95bf82f8fa618c962b2f6677f6db630943acefbafd192",
+        "target_path": "src/JobLease.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobStatus",
+        "new_fqcn": "Kumwe\\Automation\\JobStatus",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobStatus.php",
+        "source_sha256": "18f838c03b1d68f51761b19bd637ef1f30f01908f51ee1167e3cff386bdd8675",
+        "target_path": "src/JobStatus.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\StoredJob",
+        "new_fqcn": "Kumwe\\Automation\\StoredJob",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/StoredJob.php",
+        "source_sha256": "28147f48bcd624205a70dcdf8c052f05d6df3f1ee7a2ce2cd3112454bae77adb",
+        "target_path": "src/StoredJob.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobExecutionClass",
+        "new_fqcn": "Kumwe\\Automation\\JobExecutionClass",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobExecutionClass.php",
+        "source_sha256": "00dee063d6d5c39dc3b8331fb06055c07172449a43626c1dc839b7fbcbc51731",
+        "target_path": "src/JobExecutionClass.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobQueue",
+        "new_fqcn": "Kumwe\\Automation\\JobQueue",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobQueue.php",
+        "source_sha256": "3ba0fa16685808572a7ffaaf813c76b5042a1039431acf340213c82a7836e893",
+        "target_path": "src/JobQueue.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobHandler",
+        "new_fqcn": "Kumwe\\Automation\\JobHandler",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobHandler.php",
+        "source_sha256": "0c801eacf7be61a373dd04ffd9b6a84de39022f80a05b227c4c86d3e25cb8ac8",
+        "target_path": "src/JobHandler.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\JobHandlerRegistry",
+        "new_fqcn": "Kumwe\\Automation\\JobHandlerRegistry",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/JobHandlerRegistry.php",
+        "source_sha256": "22f0880051d6059d58a3e9ccee02487609600d67ca124da21cb33b23fbac8735",
+        "target_path": "src/JobHandlerRegistry.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\QueueRuntimePolicy",
+        "new_fqcn": "Kumwe\\Automation\\QueueRuntimePolicy",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/QueueRuntimePolicy.php",
+        "source_sha256": "26746ed2e053818c9290bbc8687f2b914799387d144450f3495b0a708fcf7355",
+        "target_path": "src/QueueRuntimePolicy.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\QueueRuntimePolicyCatalog",
+        "new_fqcn": "Kumwe\\Automation\\QueueRuntimePolicyCatalog",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/QueueRuntimePolicyCatalog.php",
+        "source_sha256": "6e0d32cf6638c1285afe93197e7bd34226988f9705e7a50a8ed41bf9287d5358",
+        "target_path": "src/QueueRuntimePolicyCatalog.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\ExpiredJobLease",
+        "new_fqcn": "Kumwe\\Automation\\ExpiredJobLease",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/ExpiredJobLease.php",
+        "source_sha256": "8dc44480d1b4ef2676eb86c0d88af808499d0811fd39775adf2ba11eec6bd550",
+        "target_path": "src/ExpiredJobLease.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\Application\\Automation\\AutomationNotFound",
+        "new_fqcn": "Kumwe\\Automation\\AutomationNotFound",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/Application/Automation/AutomationNotFound.php",
+        "source_sha256": "2b573bacb12d2a20b1dffc9827dd7fecbf8264224e186207313c9e49b8863722",
+        "target_path": "src/AutomationNotFound.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\BusinessIntegration\\Domain\\QueueContributionDefinition",
+        "new_fqcn": "Kumwe\\Automation\\QueueContributionDefinition",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/BusinessIntegration/Domain/QueueContributionDefinition.php",
+        "source_sha256": "6b398d2efabef97a84e177175a836f74e8249d5cdadfdd0b65749b5ac2237713",
+        "target_path": "src/QueueContributionDefinition.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\App\\BusinessIntegration\\Domain\\ScheduleContributionDefinition",
+        "new_fqcn": "Kumwe\\Automation\\ScheduleContributionDefinition",
+        "source_repository": "https://github.com/kumwe/app",
+        "source_commit": "24ecf956423c18933e824b43cea1bfb9127a79a9",
+        "source_path": "src/BusinessIntegration/Domain/ScheduleContributionDefinition.php",
+        "source_sha256": "f74a929885c30dc5478afebc6a80d5d546b2cd0edb66e038edea2fdbef1329b4",
+        "target_path": "src/ScheduleContributionDefinition.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\Extension\\Spi\\BusinessIntegration\\Domain\\JobContributionDefinition",
+        "new_fqcn": "Kumwe\\Automation\\JobContributionDefinition",
+        "source_repository": "https://github.com/kumwe/extension-sdk",
+        "source_commit": "e8ec23f155c5836c6bd083f154a8efb6e50aec66",
+        "source_path": "src/Spi/BusinessIntegration/Domain/JobContributionDefinition.php",
+        "source_sha256": "f513bbbbeb26814dba9361f6cc8e7dcda4d5f1ca3bc8bf3bf9b0ece54ff90fb7",
+        "target_path": "src/JobContributionDefinition.php"
+    },
+    {
+        "old_fqcn": "Kumwe\\Extension\\Spi\\Application\\Automation\\JobDeclaration",
+        "new_fqcn": "Kumwe\\Automation\\JobDeclaration",
+        "source_repository": "https://github.com/kumwe/extension-sdk",
+        "source_commit": "e8ec23f155c5836c6bd083f154a8efb6e50aec66",
+        "source_path": "src/Spi/Application/Automation/JobDeclaration.php",
+        "source_sha256": "00f34d188f338146a6da5fe010e977c7d5a1285a3820599c03c787bcd6c5020c",
+        "target_path": "src/JobDeclaration.php"
+    }
+]

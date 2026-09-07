@@ -1,0 +1,41 @@
+{
+  "name": "kumwe/automation",
+  "description": "Portable automation contracts and behavior extracted from Kumwe.",
+  "type": "library",
+  "license": "Apache-2.0",
+  "require": {
+    "php": "^8.5",
+    "kumwe/canonical-json": "^0.1.1",
+    "kumwe/contribution": "^0.1",
+    "kumwe/access-context": "^0.1",
+    "psr/clock": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kumwe\\Automation\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "php tests/run.php",
+    "lint": "php tools/verify.php --lint",
+    "architecture": "php tools/verify.php --architecture",
+    "manifests": "php tools/verify.php --manifests",
+    "manifests:record": "php tools/verify.php --write",
+    "check": [
+      "composer validate --strict",
+      "@lint",
+      "@architecture",
+      "@manifests",
+      "@test"
+    ],
+    "clean-consumer": "php tools/verify-clean-consumer.php"
+  },
+  "archive": {
+    "exclude": [
+      "/tests",
+      "/tools",
+      "/CHARTER.md",
+      "/.gitignore"
+    ]
+  }
+}
