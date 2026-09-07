@@ -4,7 +4,7 @@
 
 - Correct DST fall-back scheduling, odd retry caps and overflow-safe cron field expansion.
 - Add explicit package-owned retry, jitter and handler registry factories with Laminas service resolution tests.
-- Pin published Contribution 0.1.1; complete capability, API/member documentation and archive gates.
+- Pin published Contribution 0.1.1 and Access Context 0.1.1; complete capability, API/member documentation and archive gates.
 
 ## 0.1.0
 
