@@ -146,7 +146,7 @@ final readonly class RetryPolicy
         $delay = $this->baseDelaySeconds;
 
         for ($index = 1; $index < $attempt; $index++) {
-            if ($delay >= intdiv($this->maximumDelaySeconds, 2)) {
+            if ($delay > intdiv($this->maximumDelaySeconds, 2)) {
                 return $this->maximumDelaySeconds;
             }
 

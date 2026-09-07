@@ -855,5 +855,49 @@
       }
     ],
     "ownership": "portable package behavior"
+  },
+  {
+    "symbol": "Kumwe\\Automation\\ConfigProvider",
+    "kind": "class",
+    "portable_tests": [
+      "tests/container.php"
+    ],
+    "boundary_gate": "tools/verify.php --manifests",
+    "archive_gate": "tools/verify-clean-consumer.php",
+    "source_tests": [],
+    "ownership": "package composition"
+  },
+  {
+    "symbol": "Kumwe\\Automation\\Container\\CryptographicJitterSourceFactory",
+    "kind": "class",
+    "portable_tests": [
+      "tests/container.php"
+    ],
+    "boundary_gate": "tools/verify.php --manifests",
+    "archive_gate": "tools/verify-clean-consumer.php",
+    "source_tests": [],
+    "ownership": "package composition"
+  },
+  {
+    "symbol": "Kumwe\\Automation\\Container\\JobHandlerRegistryFactory",
+    "kind": "class",
+    "portable_tests": [
+      "tests/container.php"
+    ],
+    "boundary_gate": "tools/verify.php --manifests",
+    "archive_gate": "tools/verify-clean-consumer.php",
+    "source_tests": [],
+    "ownership": "package composition"
+  },
+  {
+    "symbol": "Kumwe\\Automation\\Container\\RetryPolicyFactory",
+    "kind": "class",
+    "portable_tests": [
+      "tests/container.php"
+    ],
+    "boundary_gate": "tools/verify.php --manifests",
+    "archive_gate": "tools/verify-clean-consumer.php",
+    "source_tests": [],
+    "ownership": "package composition"
   }
 ]

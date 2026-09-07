@@ -91,6 +91,9 @@ final readonly class CronExpression
      */
     public function __construct(private string $expression)
     {
+        if (strlen($expression) > 1024) {
+            throw new InvalidArgumentException('A cron expression must not exceed 1024 bytes.');
+        }
         $parts = preg_split('/\s+/', trim($expression));
 
         if (!is_array($parts) || count($parts) !== 5) {
@@ -128,15 +131,14 @@ final readonly class CronExpression
     public function next(DateTimeImmutable $after, string $timezone): DateTimeImmutable
     {
         $zone = new DateTimeZone($timezone);
-        $candidate = $after->setTimezone($zone)->modify('+1 minute')->setTime(
-            (int) $after->setTimezone($zone)->modify('+1 minute')->format('H'),
-            (int) $after->setTimezone($zone)->modify('+1 minute')->format('i'),
-        );
+        $utc = new DateTimeZone('UTC');
+        $candidate = $after->setTimezone($utc)->modify('+1 minute');
+        $candidate = $candidate->setTime((int) $candidate->format('H'), (int) $candidate->format('i'));
         $limit = $candidate->modify('+5 years');
 
         while ($candidate <= $limit) {
-            if ($this->matches($candidate)) {
-                return $candidate->setTimezone(new DateTimeZone('UTC'));
+            if ($this->matches($candidate->setTimezone($zone))) {
+                return $candidate;
             }
 
             $candidate = $candidate->modify('+1 minute');
@@ -227,6 +229,9 @@ final readonly class CronExpression
 
             for ($value = $start; $value <= $end; $value += $step) {
                 $values[$normalizeSunday && $value === 7 ? 0 : $value] = true;
+                if ($step > $end - $value) {
+                    break;
+                }
             }
         }
 

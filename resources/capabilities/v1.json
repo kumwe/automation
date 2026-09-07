@@ -1,0 +1,55 @@
+{
+    "schema": "kumwe-package-capabilities/v1",
+    "package": "kumwe/automation",
+    "release": "0.2.0",
+    "namespace": "Kumwe\\Automation\\",
+    "responsibility": "Portable automation contracts and behavior extracted from Kumwe.",
+    "non_responsibilities": [
+        "Host trust, final authorization and active generation selection",
+        "Persistence, durable transactions, transport and worker lifecycle"
+    ],
+    "capabilities": [
+        {
+            "id": "automation.portable",
+            "title": "Portable automation contracts and behavior extracted from Kumwe.",
+            "description": "Canonical portable declarations, behavior and explicit construction; the host retains operational authority.",
+            "symbols": [
+                "Kumwe\\Automation\\AutomationNotFound",
+                "Kumwe\\Automation\\ConfigProvider",
+                "Kumwe\\Automation\\Container\\CryptographicJitterSourceFactory",
+                "Kumwe\\Automation\\Container\\JobHandlerRegistryFactory",
+                "Kumwe\\Automation\\Container\\RetryPolicyFactory",
+                "Kumwe\\Automation\\CronExpression",
+                "Kumwe\\Automation\\CryptographicJitterSource",
+                "Kumwe\\Automation\\ExpiredJobLease",
+                "Kumwe\\Automation\\FailureClassification",
+                "Kumwe\\Automation\\JitterSource",
+                "Kumwe\\Automation\\JobContributionDefinition",
+                "Kumwe\\Automation\\JobDeclaration",
+                "Kumwe\\Automation\\JobEnvelope",
+                "Kumwe\\Automation\\JobExecutionClass",
+                "Kumwe\\Automation\\JobHandler",
+                "Kumwe\\Automation\\JobHandlerRegistry",
+                "Kumwe\\Automation\\JobLease",
+                "Kumwe\\Automation\\JobQueue",
+                "Kumwe\\Automation\\JobStatus",
+                "Kumwe\\Automation\\PermanentFailure",
+                "Kumwe\\Automation\\QueueContributionDefinition",
+                "Kumwe\\Automation\\QueueRuntimePolicy",
+                "Kumwe\\Automation\\QueueRuntimePolicyCatalog",
+                "Kumwe\\Automation\\RetryDecision",
+                "Kumwe\\Automation\\RetryPolicy",
+                "Kumwe\\Automation\\ScheduleContributionDefinition",
+                "Kumwe\\Automation\\StoredJob",
+                "Kumwe\\Automation\\TransientFailure"
+            ],
+            "documentation": [
+                "docs/public-api.md",
+                "docs/architecture.md",
+                "docs/integration.md"
+            ]
+        }
+    ],
+    "native_requirements": null,
+    "deprecations": []
+}

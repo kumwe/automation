@@ -1,12 +1,45 @@
 {
+    "schema": "kumwe-package-service-map/v1",
     "package": "kumwe/automation",
-    "ports": [
-        "Kumwe\\Automation\\JitterSource",
-        "Kumwe\\Automation\\JobHandler",
-        "Kumwe\\Automation\\JobQueue",
-        "Kumwe\\Automation\\QueueRuntimePolicyCatalog",
-        "Kumwe\\Automation\\TransientFailure"
+    "release": "0.2.0",
+    "config_provider": "Kumwe\\Automation\\ConfigProvider",
+    "provider_absence_reason": null,
+    "factories": [
+        {
+            "service": "Kumwe\\Automation\\CryptographicJitterSource",
+            "factory": "Kumwe\\Automation\\Container\\CryptographicJitterSourceFactory",
+            "lifetime": "shared"
+        },
+        {
+            "service": "Kumwe\\Automation\\RetryPolicy",
+            "factory": "Kumwe\\Automation\\Container\\RetryPolicyFactory",
+            "lifetime": "shared"
+        },
+        {
+            "service": "Kumwe\\Automation\\JobHandlerRegistry",
+            "factory": "Kumwe\\Automation\\Container\\JobHandlerRegistryFactory",
+            "lifetime": "shared"
+        }
     ],
-    "bindings": [],
-    "composition": "Host supplies explicit constructor dependencies and implements ports. This package performs no automatic registration."
+    "aliases": {
+        "Kumwe\\Automation\\JitterSource": "Kumwe\\Automation\\CryptographicJitterSource"
+    },
+    "delegators": [],
+    "configuration_keys": [
+        {
+            "key": "kumwe.automation.base_delay_seconds",
+            "default": 1,
+            "description": "Explicit automation configuration; see docs/integration.md."
+        },
+        {
+            "key": "kumwe.automation.maximum_delay_seconds",
+            "default": 300,
+            "description": "Explicit automation configuration; see docs/integration.md."
+        },
+        {
+            "key": "kumwe.automation.handlers",
+            "default": [],
+            "description": "Explicit automation configuration; see docs/integration.md."
+        }
+    ]
 }

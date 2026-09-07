@@ -311,5 +311,41 @@
     "explicit_import_consumers": [],
     "search_limit": "Exact fully qualified references; same-namespace short names and dynamic references require adoption review.",
     "adoption": "blocked pending immutable verified dependency releases"
+  },
+  {
+    "old_fqcn": null,
+    "new_fqcn": "Kumwe\\Automation\\ConfigProvider",
+    "repository": "app",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "adoption": "optional explicit provider registration after independent release verification"
+  },
+  {
+    "old_fqcn": null,
+    "new_fqcn": "Kumwe\\Automation\\Container\\CryptographicJitterSourceFactory",
+    "repository": "app",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "adoption": "optional explicit provider registration after independent release verification"
+  },
+  {
+    "old_fqcn": null,
+    "new_fqcn": "Kumwe\\Automation\\Container\\JobHandlerRegistryFactory",
+    "repository": "app",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "adoption": "optional explicit provider registration after independent release verification"
+  },
+  {
+    "old_fqcn": null,
+    "new_fqcn": "Kumwe\\Automation\\Container\\RetryPolicyFactory",
+    "repository": "app",
+    "explicit_import_consumers": [
+      "src/Kernel/ContainerFactory.php"
+    ],
+    "adoption": "optional explicit provider registration after independent release verification"
   }
 ]
