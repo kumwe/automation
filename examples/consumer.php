@@ -6,7 +6,13 @@ use Kumwe\Automation\ConfigProvider;
 use Kumwe\Automation\CronExpression;
 use Kumwe\Automation\FailureClassification;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+$autoload = $argv[1] ?? dirname(__DIR__) . '/vendor/autoload.php';
+if (isset($argv[1]) || !class_exists(Composer\Autoload\ClassLoader::class, false)) {
+    if (!is_file($autoload) || !is_readable($autoload)) {
+        throw new RuntimeException('Composer autoload file is missing or unreadable: ' . $autoload);
+    }
+    require_once $autoload;
+}
 
 $next = (new CronExpression('0 8 * * 1-5'))->next(
     new DateTimeImmutable('2026-09-07T05:00:00Z'),
