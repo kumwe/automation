@@ -8,7 +8,7 @@ target:
   repository: "https://github.com/kumwe/automation"
   artifact_identity: "kumwe/automation"
   canonical_namespace_or_abi: "Kumwe\\Automation"
-  branch: "codex/extraction-readiness-20260907"
+  branch: codex/integration-readiness-20260908
   pull_request: "https://github.com/kumwe/automation/pull/5"
 source:
   app:
@@ -569,13 +569,13 @@ ownership:
   public_manifests:
     -
       path: "resources/public-api/v1.json"
-      sha256: "203bf0864495665c8fe466ff574c69e3bb89eb1625cc89cb58d41ade5caf64d8"
+      sha256: "9e46339ba0ca9f302deedc433893553447d7be6d471e5ea9160ed5a23bd570d8"
     -
       path: "resources/capabilities/v1.json"
-      sha256: "f03c9d290aa4e10940a4bb25baa3199e4d7ffd579b15db207eff7a6f874893ad"
+      sha256: "7d3b5e051df6467c5fc39ac1feb593aa55c87faf1975c549388698696fe93405"
     -
       path: "resources/service-map/v1.json"
-      sha256: "bbabfe6f37ea68dd300a49edf2b9745212ec16bd472897babd187dd55f4e075c"
+      sha256: "08912900acc8810cc97b6121a91530f3f28a6003993683dd6eb633e1a440972d"
   intentionally_excluded:
     - "Cron, retry, handler dispatch and job declarations are implemented and tested here. The App retains durable queues, scheduler claims, transactions, tenant authority, extension admission and worker orchestration."
 native_cpp: null
@@ -636,7 +636,7 @@ documentation:
   integration_or_consumer: "docs/integration.md"
   examples:
     - "examples/consumer.php"
-  changelog_record: "CHANGELOG.md / 0.2.0"
+  changelog_record: "CHANGELOG.md ## 0.2.1"
 release_expectations:
   version_policy: "Exact stable sibling package pins; preserve coherent released graphs until compatible successor releases exist."
   expected_artifact_types:
@@ -845,6 +845,11 @@ The machine record lists actual source mappings, known consumer paths and concre
 Package tests own portable values, validation, service behavior, explicit construction and malformed-input regressions. The machine record identifies the source suites to split. Host persistence, transactions, authority, transport and operational integration stay in App. After verified adoption, remove duplicate library implementation assertions from App together with their legacy source.
 
 ## Next-task execution notes
+
+The selected runtime dependencies are kumwe/canonical-json 0.1.1, kumwe/contribution 0.1.1, kumwe/access-context 0.1.2.
+Access Context 0.1.2 was observed at source 132c3cd7c229ceda4398e19140d1477512c27ebf.
+Run the package dependency-readiness gate before selecting the coordinated consumer graph.
+Independent release attestations remain external and are not inferred from these version pins.
 
 Independent successor release verification and the final package gate remain necessary before App adoption. Install the exact independently verified successor; run Composer resolution, archive consumer gates and affected App integration tests before namespace removal. Run final source and clean archive gates before admitting the package; then update the App dependency lock, replace namespaces, retain host adapters and remove only the inventoried portable legacy implementations.
 
