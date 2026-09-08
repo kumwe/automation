@@ -8,6 +8,8 @@ JSON-dependent constructors and factories require `Kumwe\CanonicalJson\Canonical
 
 Run `composer install` then `composer check`. `composer clean-consumer` builds a ZIP, installs it into a fresh Composer consumer and runs behavior tests against classes loaded only from that archive. During development, `KUMWE_TEST_AUTOLOAD` can identify a separate consumer's autoloader, and `KUMWE_CONSUMER_CONFIG` can provide explicit development repositories and dependency aliases. These development checks are not publication evidence.
 
+The archive consumer also executes the installed example using the real consumer autoloader and checks missing-path refusal. See [standalone example and host composition](docs/integration.md) for both supported bootstrap modes.
+
 The optional final ConfigProvider and Container factories support explicit Laminas/Mezzio composition. See [host composition](docs/integration.md), [architecture](docs/architecture.md), [complete public API](docs/public-api.md), and [release policy](docs/releasing.md).
 
 See [MIGRATION-HANDOFF.md](MIGRATION-HANDOFF.md) for exact source mapping, intentional signature changes, ownership boundaries and release blockers. Public signatures and neutral ports are checked against `resources/public-api/v1.json` and `resources/service-map/v1.json`.

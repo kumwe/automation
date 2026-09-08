@@ -2,6 +2,14 @@
 
 Install with Composer and use the canonical Kumwe\\Automation types directly. PHP 8.5 and the declared dependencies are required. Run `php examples/consumer.php` for a deterministic schedule declaration without App.
 
+From an installed consumer root, run
+`php vendor/kumwe/automation/examples/consumer.php vendor/autoload.php`.
+The example also supports a host that has already loaded its Composer autoloader, such as
+`php -d auto_prepend_file=vendor/autoload.php vendor/kumwe/automation/examples/consumer.php`.
+An explicitly supplied autoload path must exist and be readable, even when the host has
+already bootstrapped. Without an explicit path or loaded Composer autoloader, the example
+uses the package checkout's `vendor/autoload.php`.
+
 For Laminas/Mezzio, include `Kumwe\\Automation\\ConfigProvider::class` explicitly in the ConfigAggregator provider list. Pass the aggregated `dependencies` map to Laminas ServiceManager and register the full aggregated array under `config`. No provider auto-discovery is performed.
 
 | Service | Factory | Lifetime |

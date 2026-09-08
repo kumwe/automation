@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2
+
+- Let the installed example use the host's loaded Composer autoloader or an explicit autoload path.
+  Keep the package checkout fallback and reject missing or unreadable explicit paths.
+- Execute the original example from the fresh no-dev Composer ZIP installation in both host
+  bootstrap modes, with missing-path refusal checks. Runtime APIs and dependency pins are unchanged.
+
 ## 0.2.1
 
 - Select Access Context 0.1.2 so every consumer receives its malformed UTF-8 identity refusal.
