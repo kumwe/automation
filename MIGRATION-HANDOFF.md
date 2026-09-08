@@ -9,7 +9,7 @@ target:
   artifact_identity: "kumwe/automation"
   canonical_namespace_or_abi: "Kumwe\\Automation"
   branch: codex/integration-readiness-20260908
-  pull_request: "https://github.com/kumwe/automation/pull/5"
+  pull_request: https://github.com/kumwe/automation/pull/6
 source:
   app:
     repository: "https://github.com/kumwe/app"
