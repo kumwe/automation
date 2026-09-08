@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+- Select Access Context 0.1.2 so every consumer receives its malformed UTF-8 identity refusal.
+- Keep dependency-readiness coordinates synchronized with the exact production requirements.
+  Reject stale, missing, duplicate or mismatched evidence entries in the package gate.
+- Preserve package API ownership and require independent release verification before consumer adoption.
+
 ## 0.2.0
 
 - Correct DST fall-back scheduling, odd retry caps and overflow-safe cron field expansion.
