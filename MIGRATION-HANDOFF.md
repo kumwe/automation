@@ -9,7 +9,7 @@ target:
   artifact_identity: "kumwe/automation"
   canonical_namespace_or_abi: "Kumwe\\Automation"
   branch: fix/installed-example-autoload
-  pull_request: null
+  pull_request: https://github.com/kumwe/automation/pull/7
 source:
   app:
     repository: "https://github.com/kumwe/app"
