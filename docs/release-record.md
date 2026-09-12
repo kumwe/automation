@@ -68,10 +68,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\RetryPolicy
       new_fqcn: Kumwe\Automation\RetryPolicy
       source_path: src/Application/Automation/RetryPolicy.php
@@ -84,10 +82,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\RetryDecision
       new_fqcn: Kumwe\Automation\RetryDecision
       source_path: src/Application/Automation/RetryDecision.php
@@ -102,10 +98,8 @@ framework_php:
         - shouldRetry
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JitterSource
       new_fqcn: Kumwe\Automation\JitterSource
       source_path: src/Application/Automation/JitterSource.php
@@ -116,10 +110,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\CryptographicJitterSource
       new_fqcn: Kumwe\Automation\CryptographicJitterSource
       source_path: src/Application/Automation/CryptographicJitterSource.php
@@ -130,10 +122,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\FailureClassification
       new_fqcn: Kumwe\Automation\FailureClassification
       source_path: src/Application/Automation/FailureClassification.php
@@ -150,10 +140,8 @@ framework_php:
         - PERMANENT
         - TRANSIENT
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\PermanentFailure
       new_fqcn: Kumwe\Automation\PermanentFailure
       source_path: src/Application/Automation/PermanentFailure.php
@@ -163,10 +151,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\TransientFailure
       new_fqcn: Kumwe\Automation\TransientFailure
       source_path: src/Application/Automation/TransientFailure.php
@@ -176,10 +162,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobEnvelope
       new_fqcn: Kumwe\Automation\JobEnvelope
       source_path: src/Application/Automation/JobEnvelope.php
@@ -208,10 +192,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobLease
       new_fqcn: Kumwe\Automation\JobLease
       source_path: src/Application/Automation/JobLease.php
@@ -228,10 +210,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobStatus
       new_fqcn: Kumwe\Automation\JobStatus
       source_path: src/Application/Automation/JobStatus.php
@@ -251,10 +231,8 @@ framework_php:
         - PENDING
         - RESERVED
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\StoredJob
       new_fqcn: Kumwe\Automation\StoredJob
       source_path: src/Application/Automation/StoredJob.php
@@ -274,10 +252,8 @@ framework_php:
         - type
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobExecutionClass
       new_fqcn: Kumwe\Automation\JobExecutionClass
       source_path: src/Application/Automation/JobExecutionClass.php
@@ -294,10 +270,8 @@ framework_php:
         - Installation
         - Site
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobQueue
       new_fqcn: Kumwe\Automation\JobQueue
       source_path: src/Application/Automation/JobQueue.php
@@ -317,10 +291,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobHandler
       new_fqcn: Kumwe\Automation\JobHandler
       source_path: src/Application/Automation/JobHandler.php
@@ -332,10 +304,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\JobHandlerRegistry
       new_fqcn: Kumwe\Automation\JobHandlerRegistry
       source_path: src/Application/Automation/JobHandlerRegistry.php
@@ -348,10 +318,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\QueueRuntimePolicy
       new_fqcn: Kumwe\Automation\QueueRuntimePolicy
       source_path: src/Application/Automation/QueueRuntimePolicy.php
@@ -369,10 +337,8 @@ framework_php:
         - runtimeGeneration
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\QueueRuntimePolicyCatalog
       new_fqcn: Kumwe\Automation\QueueRuntimePolicyCatalog
       source_path: src/Application/Automation/QueueRuntimePolicyCatalog.php
@@ -385,10 +351,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\ExpiredJobLease
       new_fqcn: Kumwe\Automation\ExpiredJobLease
       source_path: src/Application/Automation/ExpiredJobLease.php
@@ -398,10 +362,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\Application\Automation\AutomationNotFound
       new_fqcn: Kumwe\Automation\AutomationNotFound
       source_path: src/Application/Automation/AutomationNotFound.php
@@ -411,10 +373,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\BusinessIntegration\Domain\QueueContributionDefinition
       new_fqcn: Kumwe\Automation\QueueContributionDefinition
       source_path: src/BusinessIntegration/Domain/QueueContributionDefinition.php
@@ -432,10 +392,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\App\BusinessIntegration\Domain\ScheduleContributionDefinition
       new_fqcn: Kumwe\Automation\ScheduleContributionDefinition
       source_path: src/BusinessIntegration/Domain/ScheduleContributionDefinition.php
@@ -456,10 +414,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\Extension\Spi\BusinessIntegration\Domain\JobContributionDefinition
       new_fqcn: Kumwe\Automation\JobContributionDefinition
       source_path: src/Spi/BusinessIntegration/Domain/JobContributionDefinition.php
@@ -479,10 +435,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
     - old_fqcn: Kumwe\Extension\Spi\Application\Automation\JobDeclaration
       new_fqcn: Kumwe\Automation\JobDeclaration
       source_path: src/Spi/Application/Automation/JobDeclaration.php
@@ -496,10 +450,8 @@ framework_php:
       public_properties: []
       public_constants: []
       exceptions: []
-      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization
-        is not a durable wire or authority contract.
-      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and
-        regression tests document deliberate validation and scheduling corrections.
+      serialization_contract: Explicit scalar projections documented in docs/public-api.md; PHP native serialization is not a durable wire or authority contract.
+      compatibility: Portable behavior is retained under the canonical namespace. Package-owned boundary and regression tests document deliberate validation and scheduling corrections.
   consumers:
     app_code:
       - src/Application/Automation/Job/EnforceAuditRetentionHandler.php
@@ -546,8 +498,7 @@ framework_php:
       - src/Kernel/ContainerFactory.php
     configuration_and_di: []
     reflection_and_string_references:
-      - Recompute same-namespace, reflected and dynamically constructed names before App adoption; exact
-        source inventory is evidence, not a complete dynamic reference proof.
+      - Recompute same-namespace, reflected and dynamically constructed names before App adoption; exact source inventory is evidence, not a complete dynamic reference proof.
     fixtures_and_examples:
       - examples/consumer.php
     external:
@@ -595,9 +546,7 @@ ownership:
     - path: resources/service-map/v1.json
       sha256: 4bacfb7a2eb2b2dc4046b85826bf53bda5c4ef24a23c5b9b69c2ad0bf62b05c6
   intentionally_excluded:
-    - Cron, retry, handler dispatch and job declarations are implemented and tested here. The App retains
-      durable queues, scheduler claims, transactions, tenant authority, extension admission and worker
-      orchestration.
+    - Cron, retry, handler dispatch and job declarations are implemented and tested here. The App retains durable queues, scheduler claims, transactions, tenant authority, extension admission and worker orchestration.
 native_cpp: null
 php_extension: null
 tests:
@@ -644,8 +593,7 @@ tests:
     - tests/Unit/Extension/Contribution/OwnedBindingCanonicalDriftTest.php
     - tests/Unit/Extension/Runtime/TrustEnforcingJobHandlerTest.php
   split_tests:
-    - Remove only library implementation assertions after verified App adoption; retain host wiring and
-      composed behavior assertions.
+    - Remove only library implementation assertions after verified App adoption; retain host wiring and composed behavior assertions.
   prohibited_duplicates:
     - App must not retain unit tests of vendor-owned implementation internals after adoption.
   corpora: []
@@ -659,8 +607,7 @@ documentation:
     - examples/consumer.php
   changelog_record: "CHANGELOG.md ## 0.2.2"
 release_expectations:
-  version_policy: Exact stable sibling package pins; preserve coherent released graphs until compatible
-    successor releases exist.
+  version_policy: Exact stable sibling package pins; preserve coherent released graphs until compatible successor releases exist.
   expected_artifact_types:
     - Composer package archive
     - GitHub source archive
@@ -673,20 +620,16 @@ release_expectations:
 governance:
   completion_claim: false
 decisions:
-  - Cron matching distinguishes repeated local minutes by their UTC instants; searches and field expansion are
-    bounded.
+  - Cron matching distinguishes repeated local minutes by their UTC instants; searches and field expansion are bounded.
   - Clock, jitter, canonical encoding and admitted handler services are explicit dependencies.
-  - The package owns portable scheduling and job semantics; Core owns durable queues, transactions, tenant
-    authority and workers.
+  - The package owns portable scheduling and job semantics; Core owns durable queues, transactions, tenant authority and workers.
 blockers: []
 consumer_contract:
   permitted_only_when:
-    - The selected immutable package and dependency releases have independent source, artifact and
-      clean-consumer verification.
+    - The selected immutable package and dependency releases have independent source, artifact and clean-consumer verification.
     - Core integration tests pass against the exact selected package version.
   consumer_repository: https://github.com/kumwe/app
-  dependency_or_native_change: Pin the independently verified package version exactly; resolve Composer
-    dependencies and run affected Core integration tests.
+  dependency_or_native_change: Pin the independently verified package version exactly; resolve Composer dependencies and run affected Core integration tests.
   namespace_or_api_replacements:
     - Kumwe\App\Automation\Domain\CronExpression -> Kumwe\Automation\CronExpression
     - Kumwe\App\Application\Automation\RetryPolicy -> Kumwe\Automation\RetryPolicy
@@ -708,12 +651,9 @@ consumer_contract:
     - Kumwe\App\Application\Automation\QueueRuntimePolicyCatalog -> Kumwe\Automation\QueueRuntimePolicyCatalog
     - Kumwe\App\Application\Automation\ExpiredJobLease -> Kumwe\Automation\ExpiredJobLease
     - Kumwe\App\Application\Automation\AutomationNotFound -> Kumwe\Automation\AutomationNotFound
-    - Kumwe\App\BusinessIntegration\Domain\QueueContributionDefinition ->
-      Kumwe\Automation\QueueContributionDefinition
-    - Kumwe\App\BusinessIntegration\Domain\ScheduleContributionDefinition ->
-      Kumwe\Automation\ScheduleContributionDefinition
-    - Kumwe\Extension\Spi\BusinessIntegration\Domain\JobContributionDefinition ->
-      Kumwe\Automation\JobContributionDefinition
+    - Kumwe\App\BusinessIntegration\Domain\QueueContributionDefinition -> Kumwe\Automation\QueueContributionDefinition
+    - Kumwe\App\BusinessIntegration\Domain\ScheduleContributionDefinition -> Kumwe\Automation\ScheduleContributionDefinition
+    - Kumwe\Extension\Spi\BusinessIntegration\Domain\JobContributionDefinition -> Kumwe\Automation\JobContributionDefinition
     - Kumwe\Extension\Spi\Application\Automation\JobDeclaration -> Kumwe\Automation\JobDeclaration
   files_to_update:
     - composer.json
@@ -824,13 +764,11 @@ consumer_contract:
     - tests/Unit/Extension/Contribution/OwnedBindingCanonicalDriftTest.php
     - tests/Unit/Extension/Runtime/TrustEnforcingJobHandlerTest.php
   di_or_provisioning_changes:
-    - Register Kumwe\Automation\ConfigProvider and provide all explicit host ports documented in
-      docs/integration.md.
+    - Register Kumwe\Automation\ConfigProvider and provide all explicit host ports documented in docs/integration.md.
   capability_index_changes:
     - Record ownership from the verified package capability and public API manifests.
   changelog_and_evidence_changes:
-    - Record exact source, package archive and dependency identities in the external release attestation and
-      App integration ledger.
+    - Record exact source, package archive and dependency identities in the external release attestation and App integration ledger.
   verification_commands:
     - composer check
     - Affected App integration suites
