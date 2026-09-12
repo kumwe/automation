@@ -6,4 +6,6 @@ Cron scheduling walks UTC instants and matches each instant in the requested IAN
 
 ConfigProvider and explicit Container factories are the sole PSR-11 boundary. Factories resolve the host-selected clock, jitter and explicit handler IDs. They do not discover handlers, admit trust, start workers or read ambient configuration. Domain services never receive a container.
 
-The 24 extracted portable public types retain their source/test mapping. Four package-owned composition types are additional runtime support, recorded without invented App source provenance. Library tests own behavior and DI invariants. App retains database contention, fencing, worker restart, stale generation, transaction and lifecycle acceptance evidence.
+Public types retain their source and test mappings. Composition types are package-owned runtime support,
+recorded without invented App source provenance. Library tests own behavior and DI invariants. Core retains
+database contention, fencing, worker restart, stale generation, transaction and lifecycle acceptance evidence.

@@ -25,3 +25,9 @@ Options under `kumwe.automation` are `base_delay_seconds` (integer, default 1), 
 Values, job envelopes and operation contexts are constructed per operation and never retained in shared services. Host workers supply execution context, durable queue transactions and trusted-generation fencing. Source mappings and test ownership remain in resources/migration; adopt a separately verified immutable release before removing mapped App classes and only their portable assertions.
 
 Run `composer check` for source, API/member docs, ownership, architecture, static/style, behavior, examples, audit, archive-consumer and release-regression gates.
+
+## Development consumers
+
+`KUMWE_TEST_AUTOLOAD` can select a separate consumer autoloader. `KUMWE_CONSUMER_CONFIG` can supply
+explicit development repositories and dependency aliases for cross-package work. These development
+checks are separate from verification of published immutable artifacts.

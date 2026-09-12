@@ -221,7 +221,7 @@
         "new_fqcn": "Kumwe\\Automation\\ConfigProvider",
         "source_repository": "https://github.com/kumwe/automation",
         "target_path": "src/ConfigProvider.php",
-        "responsibility": "Portable package composition added during readiness completion."
+        "responsibility": "Explicit portable package composition."
     },
     {
         "origin": "package",
@@ -229,7 +229,7 @@
         "new_fqcn": "Kumwe\\Automation\\Container\\CryptographicJitterSourceFactory",
         "source_repository": "https://github.com/kumwe/automation",
         "target_path": "src/Container/CryptographicJitterSourceFactory.php",
-        "responsibility": "Portable package composition added during readiness completion."
+        "responsibility": "Explicit portable package composition."
     },
     {
         "origin": "package",
@@ -237,7 +237,7 @@
         "new_fqcn": "Kumwe\\Automation\\Container\\JobHandlerRegistryFactory",
         "source_repository": "https://github.com/kumwe/automation",
         "target_path": "src/Container/JobHandlerRegistryFactory.php",
-        "responsibility": "Portable package composition added during readiness completion."
+        "responsibility": "Explicit portable package composition."
     },
     {
         "origin": "package",
@@ -245,6 +245,6 @@
         "new_fqcn": "Kumwe\\Automation\\Container\\RetryPolicyFactory",
         "source_repository": "https://github.com/kumwe/automation",
         "target_path": "src/Container/RetryPolicyFactory.php",
-        "responsibility": "Portable package composition added during readiness completion."
+        "responsibility": "Explicit portable package composition."
     }
 ]
