@@ -1,6 +1,6 @@
 {
   "name": "kumwe/automation",
-  "description": "Portable automation contracts and behavior extracted from Kumwe.",
+  "description": "Portable cron scheduling, retry policy, job and queue contracts with explicit host composition.",
   "type": "library",
   "license": "Apache-2.0",
   "require": {

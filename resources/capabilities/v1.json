@@ -3,7 +3,7 @@
     "package": "kumwe/automation",
     "release": "0.2.2",
     "namespace": "Kumwe\\Automation\\",
-    "responsibility": "Portable automation contracts and behavior extracted from Kumwe.",
+    "responsibility": "Portable cron scheduling, retry policy, job and queue contracts with explicit host composition.",
     "non_responsibilities": [
         "Host trust, final authorization and active generation selection",
         "Persistence, durable transactions, transport and worker lifecycle"
@@ -11,7 +11,7 @@
     "capabilities": [
         {
             "id": "automation.portable",
-            "title": "Portable automation contracts and behavior extracted from Kumwe.",
+            "title": "Portable cron scheduling, retry policy, job and queue contracts with explicit host composition.",
             "description": "Canonical portable declarations, behavior and explicit construction; the host retains operational authority.",
             "symbols": [
                 "Kumwe\\Automation\\AutomationNotFound",

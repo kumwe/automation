@@ -1,18 +1,20 @@
-# automation ownership charter
+# Automation ownership charter
 
-Change set: KUMWE-CS-2026-026. Migration: KUMWE-MIG-2026-026.
-Non-roadmap reference: NRM-2026-026; extraction is an enabling refactor.
+Automation owns portable cron, retry, deadline, job, queue, schedule, lease and outcome semantics
+under the canonical namespace `Kumwe\Automation`.
 
-## Responsibility
+## Host responsibilities
 
-Portable cron, retry, deadline, job, queue, schedule, lease, and outcome semantics under the canonical namespace `Kumwe\Automation`.
+Core and other hosts own worker daemons, schedulers, infrastructure adapters, trusted handler selection,
+transactions, telemetry and tenant authority. Production package code never imports Kumwe App.
 
-## Retained host responsibilities
+## Package contract
 
-Worker daemons, schedulers, infrastructure adapters, trusted handler selection, transactions, telemetry, and tenant authority remain outside this package. Production code never imports Kumwe App.
+The package owns portable behavior, boundary and conformance tests, public API manifests, archive
+verification and consumer examples. [The release contract record](docs/release-record.md) preserves
+source provenance, symbol mappings and compatibility requirements.
 
-## Delivery boundary
-
-This branch owns Phase 1 package implementation and its behavior, boundary, conformance, public API, archive, and consumer tests. The source closure and exact old-to-new mapping are recorded in the migration handoff. App remains unchanged until separately verified immutable releases permit adoption. Dependencies that have not passed independent release verification are explicit publication blockers.
-
-Package publication and consumer adoption require the reviewed release protocol; this branch does not merge, tag, or publish artifacts. Each portable symbol has one eventual canonical owner. Namespace aliases, copied vendor implementations, and silent runtime fallbacks are prohibited.
+Consumers use independently verified immutable releases and retain host integration tests when changing
+an exact package pin. Package publication does not establish consumer integration. Each portable symbol
+has one canonical owner; namespace aliases, copied vendor implementations and silent runtime fallbacks
+are prohibited.
